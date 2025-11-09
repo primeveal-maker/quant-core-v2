@@ -1,0 +1,15 @@
+amk:
+  window_sec: [5, 10, 20]
+  gaussian_sigma: auto
+flow_field:
+  price_levels: 10
+entropy:
+  window_bars: 100
+  thresholds:
+    H_low: 0.40
+    H_high: 0.70
+topology:
+  window_bars: 720
+  graph_min_weight: 0.02
+storage:
+  base_path: data/
