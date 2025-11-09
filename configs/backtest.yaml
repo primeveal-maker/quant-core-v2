@@ -1,0 +1,15 @@
+execution:
+  mode: next_bar_open
+  delay_bars: 1
+  fees_bps: 6
+  slippage_model: impact
+  impact_coef: 0.6
+risk:
+  base_size: 1.0
+  entropy_sizing: true
+  k_sigma_stop: 2.5
+  max_symbol_risk: 0.07
+  var_alpha: 0.05
+meta_fusion:
+  agree_low: 0.45
+  agree_high: 0.65

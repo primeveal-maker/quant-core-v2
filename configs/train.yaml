@@ -1,0 +1,26 @@
+task: classification
+target: sign_r_next
+features_path: data/features
+split:
+  scheme: walk_forward
+  train_months: 18
+  valid_months: 3
+  test_months: 3
+preprocess:
+  scaler: quantile
+  scaler_fit_scope: train_only
+model:
+  type: xgboost
+  params:
+    max_depth: 6
+    eta: 0.08
+    n_estimators: 1200
+    subsample: 0.8
+    colsample_bytree: 0.8
+    min_child_weight: 4
+    reg_lambda: 1.0
+    reg_alpha: 0.0
+early_stopping:
+  metric: pr_auc
+  rounds: 100
+prob_calibration: isotonic

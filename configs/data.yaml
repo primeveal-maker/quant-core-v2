@@ -1,0 +1,10 @@
+exchanges:
+  - name: binance
+    channels: [depth5, trades, bookTicker, funding, oi]
+symbols: [ETHUSDT, BTCUSDT]
+intervals: [1m, 5m, 30m, 1h, 4h]
+storage:
+  format: parquet
+  base_path: data/
+time:
+  tz: UTC

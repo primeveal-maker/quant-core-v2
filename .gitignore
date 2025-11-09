@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.swp
+.env
+.venv
+.envrc
+logs/
+data/
+models/
+signals/
+reports/
+.DS_Store
